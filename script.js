@@ -58,7 +58,7 @@ function calculateFunction(){
     let x = Number(outputButtom.innerHTML);
     let y= Number(outputTop.innerHTML.slice(0,-1));
     if(outputTop.innerHTML.includes('/')) {
-        outputButtom.innerHTML= y/x;
+        outputButtom.innerHTML= y÷x;
         outputTop.innerHTML=''; 
     }else if(outputTop.innerHTML.includes('*')) {
         outputButtom.innerHTML= y*x;
@@ -174,7 +174,7 @@ divide.addEventListener('click', ()=>{
     calculateFunction();
     if(!outputButtom.innerHTML.includes('/') && !outputTop.innerHTML.includes('/')){
     if(outputButtom.innerHTML || outputButtom.innerHTML=='0'){
-        outputButtom.innerHTML += '/';
+        outputButtom.innerHTML += '÷';
 }
 } 
 });
